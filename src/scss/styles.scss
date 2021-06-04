@@ -1,0 +1,22 @@
+// ABSTRUCT
+@import 'abstruct/variables';
+@import 'abstruct/mixin';
+
+// BASE
+@import 'base/reset';
+@import 'base/base';
+
+// ANIMATION 
+@import 'animation/basic';
+
+// COMPONENTS
+@import 'components/layout';
+
+// LAYOUT
+@import 'layout/nav';
+@import 'layout/header';
+@import 'layout/footer';
+
+// PAGES
+// @import 'pages/home';
+// @import 'pages/contact';

@@ -1,0 +1,161 @@
+.footer {
+     @include fullWidthContainer;
+     background-color: $color-bg;
+     padding: 10rem 0;
+     display: flex;
+     flex-flow: column;
+     gap: 5rem;
+     @include resp(screenW760){
+          padding: 5rem 0;
+     }
+
+     &__grid { /*-------------------------------- Footer / Grid  ---------------------------------*/
+          @include fluidContainer;
+          justify-content: space-between;
+
+          @include resp(screenW760){
+               flex-flow: column;
+          }
+
+          &--col {
+               width: 50%;
+               height: 100%;
+               display: flex;
+               justify-content: space-around;
+
+               @include resp(screenW760){
+                    width: 100%;
+                    justify-content: space-between;
+               }
+               @include resp(screenW480){
+                    flex-flow: column;
+                    gap: 2rem;
+               }
+          }
+          &--col:not(:last-child){
+               padding-bottom: 3rem;
+          }
+
+          &--row {
+               width: 50%;
+               display: flex;
+               flex-flow: column;
+
+               @include resp(screenW480){
+                    width: 100%;
+               }
+          }
+
+          &__grid:not(:last-child){
+               padding-bottom: 3rem;
+          }
+     }
+     
+     &__title {
+          color: $color-white;
+          text-align: center;
+          padding-bottom: 2rem;
+     }
+
+     &__list {
+          text-align: center;
+          display: flex;
+          flex-flow: column;
+
+          &--item {
+               font-size: $md;
+               color: $color-gray50;
+          }
+          
+          &--item:not(:last-of-type) {
+               padding-bottom: 2rem;
+          }
+
+          &--link:active,
+          &--link:visited,
+          &--link:link {
+               font-size: $md;
+               color: $color-gray50;
+               transition: color .2s linear;
+          }
+
+          &--link:hover {
+               color: $color-gray5;
+          }
+
+          
+          
+     }
+
+     &__text {
+          color: $color-gray50;
+     }
+
+     /*-------------------------------- Footer / Media / Logo / Social Icons  ---------------------------------*/
+     &__grid:first-of-type { 
+          @include resp(screenW760){
+               flex-flow: row;
+          }
+
+          @include resp(screenW760){
+               flex-flow: column;
+               align-items: center;
+          }
+     }
+
+     &__logo {
+          width: 50%;
+          display: flex;
+          align-items: center;
+          
+
+          &--img {
+               width: 15rem;
+               height: auto;
+               color: $color-white;
+               font-size: $lg;
+
+               @include resp(screenW760){
+                    width: 100%;
+                    padding-bottom: 3rem;
+                    text-align: center;
+               }
+          }
+     }
+
+     &__social {
+          display: flex;
+          align-items: center;
+          // gap: 1rem;
+
+          &--item:not(:last-child){
+               padding-right: 1.5rem;
+          }
+
+          &--icon {
+               font-size: $xl;
+               color: $color-gray25;
+               transition: color .3s linear;
+          }
+
+          &--fb:hover .fa-facebook-square {
+               color: $color-fb;
+          }
+
+          &--in:hover .fa-instagram-square {
+               color: $color-in;
+          }
+
+          &--li:hover .fa-linkedin {
+               color: $color-li;
+          }
+
+          &--tw:hover .fa-twitter-square {
+               color: $color-tw;
+          }
+
+          &--be:hover .fa-behance-square {
+               color: $color-be;
+          }
+     }
+}

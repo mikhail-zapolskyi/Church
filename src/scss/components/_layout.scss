@@ -1,0 +1,47 @@
+/*----------------------------------- MAIN CONTAINER LAYOUTS ------------------------------------*/
+.section__cont {
+     width: 100%;
+     min-height: 40vh;
+     height: auto;
+     position: relative;
+     background-color: $color-white;
+     
+}
+
+.left__cont,
+.right__cont {
+     width: 50%;
+     height: auto;
+     @include resp(screenW760){
+          width: 100%;
+     }
+}
+// USE IT WITH FULL WIDTH CONTAINER MIXIN
+.left__cont--pl {
+     width: 50%;
+     height: auto;
+     padding-left: 12.5%;
+     @include resp(screenW1600){
+          padding-left: 8%;
+     }
+     @include resp(screenW760){
+          width: 100%;
+          padding: 0 4%;
+     }
+}
+
+.right__cont--pr {
+     width: 50%;
+     height: auto;
+     padding-right: 12.5%;
+     @include resp(screenW1600){
+          padding-right: 8%;
+     }
+     @include resp(screenW760){
+          width: 100%;
+          padding: 0 4%;
+     }
+}
+/*----------------------------------------------------- END ----------------------------------------------------*/ 
+
+

@@ -1,0 +1,88 @@
+html {
+     font-size: 62.5%;
+     scroll-behavior: smooth;
+}
+
+body {
+     max-width: 100%;
+     width: 100vw;
+     height: auto;
+     font-family: 'Gothic A1', sans-serif;
+     position: relative;
+}
+
+.main {
+     width: 100%;
+     height: auto;
+     margin: 0 auto;
+     padding: 0 12.5%;
+     @include resp(screenW1600){
+          padding: 0 8%;
+     }
+     @include resp(screenW1024){
+          padding: 0 4%;
+     }
+} 
+
+.bg {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 10;
+     pointer-events: none; // PREVENT ANY POINTER EVENTS TO ALLOW USE CONTENT UNDER THIS CONTAINER
+
+     &__L,
+     &__R {
+          width: 12.5%;
+          height: 100vh;
+          border-left: 0.1rem solid $grid-lines-color;
+          @include resp(screenW1600){
+               width: 8%;
+          }
+          @include resp(screenW1024){
+               width: 4%;
+          }
+     }
+
+     &__C {
+          width: 75%;
+          height: 100vh;
+          display: flex;
+          @include resp(screenW1600){
+               width: 84%;
+          }
+          @include resp(screenW1024){
+               width: 92%;
+          }
+          &-rows {
+               width: calc(100% / 6);
+               height: 100vh;
+               border-left: 1px solid $grid-lines-color;
+               @include resp(screenW1024){
+                    width: calc(100% / 4);
+               }
+          }
+
+          &-hidden {
+               @include resp(screenW1024){
+                    display: none;
+               }
+          }
+     }
+}
+
+hr.hr__center {
+     width: 50%; 
+     height: .1rem; 
+     margin: 0 auto;
+     background-color:$color-gray25;
+}
+
+hr.hr__left{
+     width: 30%; 
+     height: .1rem; 
+     background-color:$color-gray25;
+}

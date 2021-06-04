@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './scss/styles.scss';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.querySelector('#root'));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// // ------------------------- onScroll change opacity of menu link stages
+
+// window.addEventListener('scroll', () => {
+//      let pos = window.scrollY;
+
+//      if (pos !== 0 ){
+//           document.querySelector('.nav__C-link-scroll').style.opacity = 0;
+//      } else {
+//           document.querySelector('.nav__C-link-scroll').style.opacity = 1;
+//      }
+// });

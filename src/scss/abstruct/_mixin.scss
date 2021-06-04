@@ -1,0 +1,73 @@
+// MEDIA QUERY MIXIN FOR SCREENS
+@mixin resp($breakpoint){
+     // SCREEN MAX WIDTH
+     @if $breakpoint == screenW320 {
+          @media (max-width: 20em) {@content};   //320px 
+     }
+     @if $breakpoint == screenW480 {
+          @media (max-width: 30em) {@content};   //480px 
+     }
+     @if $breakpoint == screenW600 {
+          @media (max-width: 37.5em) {@content};   //600px 
+     } 
+     @if $breakpoint == screenW760 {
+          @media (max-width: 47.5em) {@content};   //768px 
+     } 
+     @if $breakpoint == screenW768 {
+          @media (max-width: 48em) {@content};   //768px 
+     } 
+     @if $breakpoint == screenW900 {
+          @media (max-width: 56.25em) {@content};   //900px 
+     } 
+     @if $breakpoint == screenW1024 {
+          @media (max-width: 64em) {@content};   //1024px 
+     }
+     @if $breakpoint == screenW1200 {
+          @media (max-width: 75em) {@content};  //1200px 
+     }
+     @if $breakpoint == screenW1440 {
+          @media (max-width: 90em) {@content};  //1440px 
+     }
+     @if $breakpoint == screenW1600 {
+          @media (max-width: 100em) {@content};  //1600px 
+     }
+     @if $breakpoint == screenW1800 {
+          @media (max-width: 112.5em) {@content};  //1800px 
+     } 
+     @if $breakpoint == screenW2000 {
+          @media (max-width: 125em) {@content};  //1800px 
+     } 
+     @if $breakpoint == screenW2400 {
+          @media (max-width: 150em) {@content};  //1800px 
+     } 
+     // SCREEN MIN WIDTH
+     @if $breakpoint == screenMW1024 {
+          @media (min-width: 64em) {@content};  //1200px 
+     }
+
+// SCREEN MAX HEIGHT
+     @if $breakpoint == screenH600 {
+          @media (max-height: 37.5em) {@content};   //600px 
+     }
+}
+
+// ----------------------  THEME MIX IN -------------------------
+// FLUID CONTAINER WITH CENTER POSITION
+@mixin fluidContainer {
+     width: 75%;
+     height: auto;
+     margin: 0 auto;
+     display: flex;
+     @include resp(screenW1600){
+          width: 84%;
+     }
+     @include resp(screenW1024){
+          width: 92%;
+     }
+}
+
+// FULL WIDTH CONTAINER 
+@mixin fullWidthContainer {
+     width: 100%;
+     display: flex;
+}

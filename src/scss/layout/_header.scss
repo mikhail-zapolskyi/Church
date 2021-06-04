@@ -1,0 +1,159 @@
+header {
+     position: reletive;
+     background-size: cover;
+}
+
+.index{
+     min-height: 100vh;
+     background: no-repeat url('../../images/img-7.jpg');
+}
+
+.news,
+.stages,
+.historical-assessment,
+.contact {
+     min-height: 60vh;
+}
+.news{
+     background: no-repeat url('../../images/img6.jpg');
+}
+.stages {
+     background: no-repeat url('../../images/img5.jpg');
+}
+.historical-assessment {
+     background: no-repeat url('../../images/img4.jpg');
+}
+.contact {
+     background: no-repeat url('../../images/img3.jpg');
+}
+
+.hero {
+     width: 100%;
+     height: auto;
+     position: relative;
+     display: flex;
+     background-color: $color-blend;
+     background-size: cover;
+     background-position: center center;
+     background-blend-mode: darken;
+
+     @include resp(screenW768){
+          flex-flow: column;
+          background-position: 15% 0;
+     }
+
+     &__title {
+          width: 66.66%;
+          align-self: center;
+          @include resp(screenW1024){
+               width: 100%;
+          }
+          @include resp(screenW768){
+               position: absolute;
+               top: 50%;
+          }
+
+          &-text {
+               text-align: center;
+               font-size: $xxxl;
+               font-weight: 800;
+               color: $color-white;
+               @include resp(screenW768){
+                    padding: 5rem 0;
+                    font-size: $xxl;
+               }
+          }
+     }
+
+     &__info {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 50%;
+          min-height: 10vh;
+          height: 10rem;
+          display: flex;
+          flex-flow: row;
+          justify-content: space-evenly;
+          background-color: $color-white;
+
+          @include resp(screenW1024){
+               width: 100%;
+               top: 0;
+          }
+
+          @include resp(screenW768){
+               height: auto;
+               flex-flow: column;
+               justify-content: flex-start;
+               padding: 0 3rem;
+               background-color: transparent;
+          }
+
+          &-col {
+               width: calc(100% / 4);
+               display: flex;
+               flex-flow: column;
+               padding: 2rem 0;
+
+               @include resp(screenW768){
+                    width: 100%;
+               }
+          }
+
+          &-col:first-of-type {
+               @include resp(screenW1600){
+                    width: 12.5%;
+               }
+          }
+
+          &-row {
+               display: flex;
+          }
+
+          &-title {
+               padding-bottom: 1rem;
+               font-size: $md;
+               font-weight: 600;
+
+               @include resp(screenW768){
+                    color: $color-white;
+               }
+          }
+
+          &-text{
+               font-size: $sm;
+               @include resp(screenW768){
+                    color: $color-white;
+               }
+          }
+
+          &-link {
+               padding: 0 1rem;
+          }
+
+          &-icon--f {
+               font-size: $xl;
+               color: $color-fb;
+               @include resp(screenW768){
+                    color: $color-white;
+               }
+          }
+
+          &-icon--t {
+               font-size: $xl;
+               color: $color-tw;
+               @include resp(screenW768){
+                    color: $color-white;
+               }
+          }
+
+          &-icon--l {
+               font-size: $xl;
+               color: $color-li;
+               @include resp(screenW768){
+                    color: $color-white;
+               }
+          }
+     }
+}

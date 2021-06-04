@@ -1,0 +1,220 @@
+.nav {
+     width: 100%;
+     height: 10vh;
+     position: fixed;
+     top: 0;
+     left: 0;
+     display: flex;
+     z-index: 2;
+     
+// LEFT SIDE OF THE NAV BAR DESKTOP
+     &__L {
+          width: 12.5%;
+          @include resp(screenW1600){
+               width: 8%;
+          }
+          @include resp(screenW1024){
+               display: none;
+          }
+     }
+// CENTER OF THE NAV BAR DESKTOP
+     &__C {
+          width: 75%;
+          display: flex;
+          justify-content: flex-end;
+          @include resp(screenW1600){
+               width: 84%;
+          }
+          @include resp(screenW1024){
+               display: none;
+          }
+
+          &-link {
+               width: calc(100% / 6);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               font-size: $sm;
+               text-align: center;
+
+               &:hover:not(:first-of-type) {
+                    border-bottom: 1px solid $color-gray75;
+               }
+          // WHITE BACKGROUD FOR 3 LAST LINKS
+               &:not(:first-of-type) {
+                    background-color: $color-white;
+               }
+          }
+          
+     }
+// RIGHT SIDE OF THE NAV BAR DESKTOP - BUTTON
+     &__R {
+          width: 12.5%;
+          height: 10vh;
+          display: flex;
+          background-color: $color-white;
+          cursor: pointer;
+          @include resp(screenW1600){
+               width: 8%;
+          }
+          @include resp(screenW1024){
+               width: 8rem;
+               height: 8rem;
+               position: fixed;
+               top: 95%;
+               right: 5%;
+               transform: translate(-5%, -90%);
+          }
+          
+
+          &-link {
+               width: 100%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+          }     
+     // NAV BUTTON START
+          &-button {
+               position: relative;
+          }
+     
+          &-lineT {
+               position: absolute;
+               top: 45%;
+               left: 50%;
+               transform: translate(-50%, -45%);
+               width: calc(100% / 5);
+               height: 1px;
+               background-color: black;
+               transition: all 0.4s ease-in-out;
+          }
+     
+          &-lineC {
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               display: none;
+               transform: translate(-50%, -50%);
+               font-size: $xsm;
+               transition: all 0.7s ease-in-out;
+          }
+     
+          &-lineB {
+               position: absolute;
+               top: 55%;
+               left: 50%;
+               transform: translate(-50%, -55%);
+               width: calc(100% / 5);
+               height: 1px;
+               background-color: black;
+               transition: all 0.4s ease-in-out;
+          }
+     // ON HOVER LINES MOVES, MENU WORD APPEAR
+          &-button:hover > &-lineT,
+          .lineT__hover {
+               top: 30%;
+               left: 30%;
+               transform: translateX(-30%, -30%);
+          }
+     
+          &-button:hover > &-lineC,
+          .lineC__hover {
+               display: block;
+          }
+     
+          &-button:hover > &-lineB,
+          .lineB__hover {
+               top: 70%;
+               left: 70%;
+               transform: translateX(-70%, -70%);
+          }
+     // END NAV BUTTON
+     }
+
+
+     &__mob { /*-------------------------------------- MOBILE MENU ----------------------------------------*/
+          width: 100vw;
+          height: 100vh;
+          background-color: $color-white;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: none;
+
+          &-container--L {     /*-------------------------------------- MOBILE MENU / Left Container----------------------------------------*/         
+               width: 62.5%;
+               height: 100vh;
+               padding-left: 12.5%;
+               background-color: $color-white;
+               display: flex;
+               align-items: center;
+               @include resp(screenW1600){
+                    width: 67%;
+                    padding-left: 8%;
+               }
+               @include resp(screenW1024){
+                    width: 100%;
+                    padding: 0 4%;
+               }
+
+               @include resp(screenW480){
+                    flex-flow: column;
+               }
+          }
+
+          &-L { /*-------------------------------------- MOBILE MENU / Logo ----------------------------------------*/  
+               width: 25%;
+               height: 50%;
+               padding: 5rem 0;
+               @include resp(screenW480){
+                    width: 80%;
+                    height: auto;
+                    text-align: center;
+               }
+          }
+
+          &-logo{
+               max-width: 70%;
+               height: auto;
+          }
+
+          &-R { /*-------------------------------------- MOBILE MENU / Navigation ----------------------------------------*/  
+               width: calc(100% - 25%);
+               height: 50%;
+               display: flex;
+               flex-flow: column;
+               justify-content: space-evenly;
+               @include resp(screenW480){
+                    width: 80%;
+                    height: auto;
+                    text-align: center;
+                    
+               }
+          }
+
+          &-link {
+               font-size: $xl;
+          }
+
+          &-link:not(:last-child){
+               padding-bottom: 5rem;
+          }
+
+          &-container--R { /*-------------------------------------- MOBILE MENU / Right Container / Images Container ----------------------------------------*/  
+               width: calc(100% - 62.5%);
+               display: flex;
+               @include resp(screenW1024){
+                    display: none;
+               }
+          }
+
+          &-img{
+               width: 100%;
+               height: auto;
+               background-image: url('../../images/img2.jpg');
+               background-position: center right;
+               background-size: cover;
+          }
+     }
+}
+
