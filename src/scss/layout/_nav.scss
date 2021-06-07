@@ -36,16 +36,22 @@
                justify-content: center;
                font-size: $sm;
                text-align: center;
-
+               background-color: $color-white;
+               
                &:hover:not(:first-of-type) {
                     border-bottom: 1px solid $color-gray75;
                }
-          // WHITE BACKGROUD FOR 3 LAST LINKS
-               &:not(:first-of-type) {
-                    background-color: $color-white;
-               }
           }
           
+          &-active {
+               opacity: 1;
+               transition: opacity 0.3s linear;
+          }
+
+          &-hidden {
+               opacity: 0;
+               transition: opacity 0.3s linear;
+          }
      }
 // RIGHT SIDE OF THE NAV BAR DESKTOP - BUTTON
      &__R {

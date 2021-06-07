@@ -10,8 +10,8 @@ const Header = () => {
      const pageName = path.split('/');
 
      return (
-          <header className={ `header ${ path === '/' ? 'index' : pageName[1] }`}>
-               <div className='hero'>
+          <header className={ 'header' }>
+               <div className='hero' id={`${ path === '/' ? 'index' : pageName[1] }`}>
                     <div className="hero__title">
                          <h1 className="hero__title-text">
                               St. Patrick’s Church <br />

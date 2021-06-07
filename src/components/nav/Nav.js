@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 // NAV BUTTON TOOGLE AND MOB MENU
 
-const NavCenter = () => {
+const NavCenter = (props) => {
      return (
-          <div className='nav__C'>
-               <Link className='nav__C-link nav__C-link-scroll' to='/stages'>Stages</Link>
+          <div className={`nav__C ${ props.opacity }`}>
+               <Link className='nav__C-link' to='/stages'>Stages</Link>
                <Link className='nav__C-link' to='/news'>News</Link>
                <Link className='nav__C-link' to='/contacts'>Contacts</Link>
           </div>
@@ -15,7 +15,7 @@ const NavCenter = () => {
 const NavRight = (props) => {
      return (
           <div className="nav__R">
-               <div className="nav__R-link nav__R-button" onClick={ props.func }>
+               <div className={"nav__R-link nav__R-button"} onClick={ props.func }>
                     <div className="nav__R-lineT"></div>
                     <div className="nav__R-lineC">Menu</div>
                     <div className="nav__R-lineB"></div>
@@ -26,7 +26,8 @@ const NavRight = (props) => {
 
 const Nav = () => {
      const [menuToggle, setMenuToggle] = useState(false);
-     
+     const [ menuScroll, setMenuScroll ] = useState('nav__C-active');
+
      const $ = document.querySelector.bind(document);
      const nav = {
           buttonContainer: '.nav__R',
@@ -65,12 +66,27 @@ const Nav = () => {
           };
      };
 
+     const handleMenuScroll = () => {
+          if (window.scrollY !== 0) {
+               setMenuScroll('nav__C-hidden');
+          } else {
+               setMenuScroll('nav__C-active');  
+          }
+     }
+
+     useEffect(() => {
+          window.addEventListener('scroll', handleMenuScroll);
+          return () => {
+               window.removeEventListener('scroll', handleMenuScroll);
+          }
+     }, [])
+
      return (
           <div className='nav'>
                <div className='nav__L'></div>
-               <NavCenter />
-               <NavRight func={ handleMenuToogle }/>     
-               <div className="nav__mob">
+               <NavCenter opacity={ menuScroll } />
+               <NavRight func={ handleMenuToogle } />     
+               <div className="nav__mob" onClick={ handleMenuToogle }>
                     <div className="nav__mob-container--L">
                          <div className="nav__mob-L">
                               <Link className="nav__L-link" to='/'>

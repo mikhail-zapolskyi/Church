@@ -1,11 +1,15 @@
 import React from 'react';
 
-const Home = () => {
+import Intro from './Templates/Home/Intro';
+import Contributors from './Templates/Home/Contributors';
 
+const Home = () => {
+     
      return (
-          <div>
-              Home Page 
-          </div>
+          <main className="main">
+               <Intro />
+               <Contributors />
+          </main>
      )
 }
 

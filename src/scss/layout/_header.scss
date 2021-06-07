@@ -1,35 +1,38 @@
 header {
-     position: reletive;
+     position: relative;
+}
+
+#index{
+     min-height: 100vh;
+     background: no-repeat url('../../images/img-7.jpg');
      background-size: cover;
 }
 
-.index{
-     min-height: 100vh;
-     background: no-repeat url('../../images/img-7.jpg');
+#news,
+#stages,
+#assessment,
+#contacts {
+     min-height: 60vh !important;
 }
-
-.news,
-.stages,
-.historical-assessment,
-.contact {
-     min-height: 60vh;
-}
-.news{
+#news{
      background: no-repeat url('../../images/img6.jpg');
+     background-size: cover;
 }
-.stages {
+#stages {
      background: no-repeat url('../../images/img5.jpg');
+     background-size: cover;
 }
-.historical-assessment {
+#assessment {
      background: no-repeat url('../../images/img4.jpg');
+     background-size: cover;
 }
-.contact {
+#contacts {
      background: no-repeat url('../../images/img3.jpg');
+     background-size: cover;
 }
 
 .hero {
      width: 100%;
-     height: auto;
      position: relative;
      display: flex;
      background-color: $color-blend;

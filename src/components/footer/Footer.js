@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebookSquare } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
      return (     
@@ -15,22 +15,17 @@ const Footer = () => {
                          <ul className="footer__social">
                               <li className="footer__social--item">
                                    <Link to="/" className="footer__social--fb">
-                                        <FaFacebookSquare className='footer__social--icon' />
-                                   </Link>
-                              </li>
-                              <li className="footer__social--item">
-                                   <Link to="/" className="footer__social--in">
-                                        <FaFacebookSquare className='footer__social--icon' />
+                                        <FaFacebook className='footer__social--icon' />
                                    </Link>
                               </li>
                               <li className="footer__social--item">
                                    <Link to="/" className="footer__social--li">
-                                        <FaFacebookSquare className='footer__social--icon' />
+                                        <FaLinkedin className='footer__social--icon' />
                                    </Link>
                               </li>
                               <li className="footer__social--item">
                               <Link to="/" styles="footer__social--tw">
-                                        <FaFacebookSquare className='footer__social--icon' />
+                                        <FaTwitter className='footer__social--icon' />
                                    </Link>
                               </li>
                          </ul>
@@ -40,18 +35,18 @@ const Footer = () => {
                               <div className="footer__grid--row">
                                    <p className="footer__title">Get in touch</p>
                                    <ul className="footer__list">
-                                        <li className="footer__list--item"><Link to="mailto:info@miartmedia.com" styles="footer__list--link">email here</Link></li>
-                                        <li className="footer__list--item"><Link to="tel:+14039909070" className="footer__list--link">phone # here</Link></li>
+                                        <li className="footer__list--item"><a href="mailto:info@miartmedia.com" className="footer__list--link">email here</a></li>
+                                        <li className="footer__list--item"><a href="tel:+14039909070" className="footer__list--link">phone # here</a></li>
                                    </ul>
                               </div>
                               <div className="footer__grid--row">
                                    <p className="footer__title">Navigation</p>
                                    <ul className="footer__list">
-                                        <li className="footer__list--item"><Link styles="footer__list--link" to='/'>Home</Link></li>
-                                        <li className="footer__list--item"><Link styles="footer__list--link" to='stages'>Stages</Link></li>
-                                        <li className="footer__list--item"><Link styles="footer__list--link" to='news'>News</Link></li>
-                                        <li className="footer__list--item"><Link styles="footer__list--link" to='/assessment'>Historical Assessment</Link></li>
-                                        <li className="footer__list--item"><Link styles="footer__list--link" to='/contacts'>contacts</Link></li>
+                                        <li className="footer__list--item"><Link className="footer__list--link" to='/'>Home</Link></li>
+                                        <li className="footer__list--item"><Link className="footer__list--link" to='stages'>Stages</Link></li>
+                                        <li className="footer__list--item"><Link className="footer__list--link" to='news'>News</Link></li>
+                                        <li className="footer__list--item"><Link className="footer__list--link" to='/assessment'>Historical Assessment</Link></li>
+                                        <li className="footer__list--item"><Link className="footer__list--link" to='/contacts'>contacts</Link></li>
                                    </ul>
                               </div>
                          </div>
