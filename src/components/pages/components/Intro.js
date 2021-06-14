@@ -6,7 +6,7 @@ const Intro = () => {
           <section className="section__cont">
                <div className="intro">
                     <div className="intro__card left__cont">
-                         <div class="intro__card--title">
+                         <div className="intro__card--title">
                               <h2 className="intro__card--title-T">Some text need to go here</h2>
                               <Paragraph  styles="intro__card--title-underline" />
                               <hr className="hr__left" />

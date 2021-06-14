@@ -1,17 +1,17 @@
-import logo1 from '../../images/contributors/logo-1.png';
-import logo2 from '../../images/contributors/logo-2.png';
-import logo3 from '../../images/contributors/logo-3.png';
-import logo4 from '../../images/contributors/logo-4.png';
-import logo5 from '../../images/contributors/logo-5.png';
-import logo6 from '../../images/contributors/logo-6.png';
-import logo7 from '../../images/contributors/logo-7.png';
-import logo8 from '../../images/contributors/logo-8.png';
-import logo9 from '../../images/contributors/logo-9.png';
-import logo10 from '../../images/contributors/logo-10.png';
-import logo11 from '../../images/contributors/logo-11.png';
-import person1 from '../../images/people/person-1.jpg';
-import person2 from '../../images/people/person-2.jpg';
-import person3 from '../../images/people/person-3.jpg';
+import logo1 from '../images/contributors/logo-1.png';
+import logo2 from '../images/contributors/logo-2.png';
+import logo3 from '../images/contributors/logo-3.png';
+import logo4 from '../images/contributors/logo-4.png';
+import logo5 from '../images/contributors/logo-5.png';
+import logo6 from '../images/contributors/logo-6.png';
+import logo7 from '../images/contributors/logo-7.png';
+import logo8 from '../images/contributors/logo-8.png';
+import logo9 from '../images/contributors/logo-9.png';
+import logo10 from '../images/contributors/logo-10.png';
+import logo11 from '../images/contributors/logo-11.png';
+import person1 from '../images/people/person-1.jpg';
+import person2 from '../images/people/person-2.jpg';
+import person3 from '../images/people/person-3.jpg';
 
 const Data = {
      contributors: [
@@ -33,14 +33,21 @@ const Data = {
           { id: 16, src: logo11, alt: 'Hasegawa', link: ''}
      ],
      people: [
-          { id: 1, src: person1, alt: 'Person', link: '/', bio: `Short Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Delectus omnis ratione asperiores ea quam fugiat nisi atque? Animi, ducimus ratione.`, phone: '(403) 555-55-55', name: 'First LastName',
-          email: 'email@email.com', phLink: 'tel:+14035555555'},
-          { id: 2, src: person2, alt: 'Person', link: '/'},
-          { id: 3, src: person3, alt: 'Person', link: '/'},
+          { id: 1, src: person1, alt: 'Person', link: '/', bio: `President of St. John Chrysostom Ministry of Calgary.`, phone: '403-903-4013', name: 'Father Stan',
+          email: 'orthodox.calgary@gmail.com', phLink: 'tel:+14039034013'},
+          { id: 2, src: person2, alt: 'Person', link: '/', bio: `The Church revitalisation project Coordinator`, phone: '780-560-0108', name: 'Pavel Penkov',
+          email: 'pavel.penkov@hotmail.com', phLink: 'tel:+17805600108'},
+          { id: 3, src: person3, alt: 'Person', link: '/', bio: `The Church revitalisation project Coordinator`, phone: '4037144231', name: 'Peter Imshenetsky',
+          email: 'peter@pidesigngroup.ca', phLink: 'tel:+14037144231'},
      ],
      news: [
           { id: 1, src: person1, alt: 'person', title: 'This is title place', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Delectus omnis ratione asperiores`, date: new Date() },
           {id: 2, src: person1, alt: 'person', title: 'This is title place', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Delectus omnis ratione asperiores`, date: new Date()},

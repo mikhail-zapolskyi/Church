@@ -1,5 +1,6 @@
 import React from 'react';
-import { Nav, Header, PageContent, Footer } from './components/index';
+import { Nav, Header, Footer } from './components/index';
+import Routes from './routes/Routes';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 const App = () => {
@@ -8,7 +9,7 @@ const App = () => {
           <Router>   
                <Nav />
                <Header />
-               <PageContent />
+               <Routes />
                <Footer />
           </Router>
      )

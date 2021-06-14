@@ -6,7 +6,7 @@
      left: 0;
      display: flex;
      z-index: 2;
-     
+
 // LEFT SIDE OF THE NAV BAR DESKTOP
      &__L {
           width: 12.5%;
@@ -15,6 +15,17 @@
           }
           @include resp(screenW1024){
                display: none;
+          }
+
+          &-link {
+               height: 10vh;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+          }
+
+          &-text {
+               font-size: $md;
           }
      }
 // CENTER OF THE NAV BAR DESKTOP
@@ -45,12 +56,12 @@
           
           &-active {
                opacity: 1;
-               transition: opacity 0.3s linear;
+               transition: opacity .3s linear;
           }
 
           &-hidden {
                opacity: 0;
-               transition: opacity 0.3s linear;
+               transition: opacity .3s linear;
           }
      }
 // RIGHT SIDE OF THE NAV BAR DESKTOP - BUTTON
@@ -150,10 +161,8 @@
           &-container--L {     /*-------------------------------------- MOBILE MENU / Left Container----------------------------------------*/         
                width: 62.5%;
                height: 100vh;
-               padding-left: 12.5%;
                background-color: $color-white;
                display: flex;
-               align-items: center;
                @include resp(screenW1600){
                     width: 67%;
                     padding-left: 8%;
@@ -165,41 +174,55 @@
 
                @include resp(screenW480){
                     flex-flow: column;
+                    align-items: center;
                }
           }
 
           &-L { /*-------------------------------------- MOBILE MENU / Logo ----------------------------------------*/  
                width: 25%;
-               height: 50%;
+               height: 20%;
                padding: 5rem 0;
+               display: flex;
+               justify-content: center;
                @include resp(screenW480){
                     width: 80%;
                     height: auto;
+                    padding: 3rem 0;
+                    margin-bottom: 2rem;
                     text-align: center;
+                    border-bottom: 1px solid $color-black;
+               }
+
+               &--link {
+                    max-width: 70%;
+                    height: auto;
+               }
+     
+               &--text {
+                    font-size: $lg;
                }
           }
 
-          &-logo{
-               max-width: 70%;
-               height: auto;
-          }
 
           &-R { /*-------------------------------------- MOBILE MENU / Navigation ----------------------------------------*/  
                width: calc(100% - 25%);
                height: 50%;
                display: flex;
+               align-self: center;
                flex-flow: column;
                justify-content: space-evenly;
                @include resp(screenW480){
                     width: 80%;
                     height: auto;
                     text-align: center;
-                    
+                    align-self: none;
                }
           }
 
           &-link {
+               height: calc(100%/6);
                font-size: $xl;
+               padding: 0 3rem;
           }
 
           &-link:not(:last-child){

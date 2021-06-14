@@ -1,8 +1,8 @@
 import React from 'react';
 import { useRouteMatch } from 'react-router-dom';
 
-import NewsCard from './Templates/News/NewsCard';
-import Data from './Data';
+import NewsCard from './components/NewsCard';
+import Data from '../../Data/Data';
 
 
 const News = () => {
@@ -17,7 +17,7 @@ const News = () => {
                               image={ news.src }
                               alt={ news.alt }
                               title={ news.title }
-                              body={ news.body }
+                              body={ news.body.slice(0, 100) }
                               date={ news.date }
                          />
                     ))}

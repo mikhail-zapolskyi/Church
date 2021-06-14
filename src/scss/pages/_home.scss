@@ -95,7 +95,7 @@
                     right: 0;
                     width: calc(( 100% / 3 ) * 2);
                     height: 50%;
-                    background-image: url('../../images/img2.jpg');
+                    background-image: url('../../images/img0.jpg');
                     background-position: center center;
                     background-size: cover;
                     z-index: 1;
@@ -231,74 +231,22 @@
      }
 }
 
-.posts { /*---------------  Last Posts --------------------*/
-     @include fullWidthContainer;
-     min-height: 40vh;
-     padding: 10rem 0;
-     // background-color: $color-gray5;
-     flex-flow: column;
-     gap: 2rem;
+.lastnews { /*---------------  Last News --------------------*/
+     height: auto;
+     margin: 10rem 0;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+     justify-content: center;
+     justify-items: center;
+     grid-gap: 5rem;
 
-     &__cont {
-          @include fluidContainer;
-          justify-content: center;
-          @include resp(screenW768){
-               flex-flow: column;
-          }
+     @include resp(screenW1024){
+          grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
      }
 
-     &__card {
-          width: calc(100% / 3);
-          height: auto;
-          padding: 2rem;
-          display: flex;
-          flex-flow: column;
-          align-items: center;
-          gap: 2rem;
-          cursor: pointer;
-
-          @include resp(screenW768){
-               width: 100%;
-          }
-
-          &--img {
-               max-width: 100%;
-               max-height: 100%; 
-          }
-
-          &--category {
-               font-size: $sm;
-               text-align: center;
-               text-transform: uppercase;
-          }
-
-          &--title {
-               font-size: $md;
-               line-height: 1.4;
-               text-align: center;
-          }
-
-          &--date {
-               font-size: $sm;
-          }
-     }
-
-     &__link {
-          width: 20%;
-          margin: 0 auto;
-
-          @include resp(screenW1024){
-               width: 30%;
-          }
-
-          @include resp(screenW768){
-               width: 46%;
-               margin: 0 0 0 4%;
-          }
-
-          @include resp(screenW480){
-               width: calc((100% / 4) * 3 - 4%);
-          }
+     @include resp(screenW768){
+          grid-template-columns: 1fr;
+          grid-gap: 2rem;
      }
 }
      

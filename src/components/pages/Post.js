@@ -2,17 +2,18 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 
-import Data from '../pages/Data';
-import SingleNewsPage from '../pages/Templates/News/SingleNewsPage';
+import Data from '../../Data/Data';
+import Article from './components/Article';
 
-const PostPage = () => {
+
+const Post = () => {
      const { id } = useParams();
      const [ news ] = Data.news.filter(news => news.id === Number(id));
      
      return (
           <main className='main'>
-               <section className='singleNews'>
-                    <SingleNewsPage 
+               <section className='post'>
+                    <Article 
                          title={ news.title }
                          body={ news.body }
                          date={ news.date }
@@ -22,4 +23,4 @@ const PostPage = () => {
      )
 }
 
-export default PostPage;
+export default Post;

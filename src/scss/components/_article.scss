@@ -1,0 +1,31 @@
+.post {
+     &__article {
+          height: auto;
+          display: flex;
+          flex-flow: column;
+          
+          &__article-col {
+               width: 100%;
+               height: auto;
+               display: flex;
+          }
+     
+          &-title {
+               margin: 2rem 0;
+               font-size: $xxl;
+          }
+     
+          &-text {
+               font-size: $lg;
+               padding: 2rem;
+          }
+     
+          &-time {
+               width: 20%;
+               display: block;
+               justify-content: flex-end;
+               font-size: $md;
+               border: 1px solid black;
+          }
+     }
+}

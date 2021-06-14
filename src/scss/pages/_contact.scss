@@ -7,79 +7,75 @@
 }
 .contact__cont {
      width: 100%;
-     padding: 0 0 10rem 0;
-     display: flex;
+     display: grid;
+     grid-template-columns: 1fr;
      align-items: center;
      justify-content: center;
 
-     @include resp(screenW1024) {
-          flex-flow: column;
-     }
-
-     @include resp(screenW600) {
-          padding: 0 0 5rem 0;
-     }
 }
 
 .contact__card {
-     width: calc(100% / 3);
-     height: auto;
-     padding: 1rem;
-     margin: 1rem;
+     width: 100%;
+     height: 30rem;
+     margin: 2rem auto;
      background-color: $color-gray5;
      border-radius: 1rem;
-     -webkit-box-shadow: 0px 20px 48px -4px rgba(0,0,0,0.09);
-     -moz-box-shadow: 0px 20px 48px -4px rgba(0,0,0,0.09);
-     box-shadow: 0px 20px 48px -4px rgba(0,0,0,0.09);
+     -webkit-box-shadow: 4px 0px 118px -24px rgba(0,0,0,0.42);
+     -moz-box-shadow: 4px 0px 118px -24px rgba(0,0,0,0.42);
+     box-shadow: 4px 0px 118px -24px rgba(0,0,0,0.42);
+     transition: transform .4s linear;
 
-     @include resp(screenW1024) {
-          width: 100%;
+     &:hover {
+          transform: scale(1.05);
+     }
+
+     @include resp(screenW768) {
+          height: auto;
      }
 
      &--bioCont {
-          display: flex;
-          flex-flow: row;
+          display: grid;
+          grid-template-columns: 30% 70%;
 
-          @include resp(screenW1440) {
-               flex-flow: column;
-               align-items: center;
-               justify-content: center;
+          @include resp(screenW1024){
+               grid-template-columns: 40% 60%;
           }
 
-          @include resp(screenW1024) {
-               flex-flow: row;
-          }
-
-          @include resp(screenW600) {
-               flex-flow: column;
-          }
-     }
-
-     &--bioCont:not(:last-child) {
-          padding-bottom: 2rem;
-     }
-
-     &--img {
-          width: 40%;
-          height: 40%;
-          border-radius: 1rem;
-
-          @include resp(screenW1440) {
-               width: 25rem;
-               padding-bottom: 1rem;
+          @include resp(screenW768) {
+               grid-template-columns: 1fr;
           }
      }
 
      &--dataCont {
           width: 100%;
-
+          padding: 2rem;
           @include resp(screenW1400) {
                flex-flow: row;
           }
      }
 
+     &--imgCont {
+          width: 100%;
+          height: 100%;
+     }
+
+     &--img {
+          width: 100%;
+          height: 30rem;
+          padding: 1rem;
+          object-fit: cover;
+          border-radius: 2rem;
+     }
+
+     &--name {
+          margin-bottom: 2rem;
+          font-size: $lg;
+          font-weight: 700;
+     }
+
      &--link {
-          padding: 1rem 2rem;
+          padding-left: 1rem;
+          margin-bottom: 1rem;
           display: flex;
           flex-flow: row;
 
@@ -94,16 +90,11 @@
           padding: 0 2rem; 
      }
 
-     &--name {
-          font-size: $lg;
-          font-weight: 700;
-     }
+     
 
      &--shortBio {
           font-size: $md;
           line-height: 1.5;
           text-align: justify;
      }
-
-     
 }

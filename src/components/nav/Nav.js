@@ -83,16 +83,22 @@ const Nav = () => {
 
      return (
           <div className='nav'>
-               <div className='nav__L'></div>
+               <div className='nav__L'>
+                    <Link className="nav__L-link" to="/">
+                         <p className='nav__L-text'>
+                              St.Patrick <br /> Church <br /> Revitalization
+                         </p>
+                    </Link>
+               </div>
                <NavCenter opacity={ menuScroll } />
                <NavRight func={ handleMenuToogle } />     
                <div className="nav__mob" onClick={ handleMenuToogle }>
                     <div className="nav__mob-container--L">
                          <div className="nav__mob-L">
-                              <Link className="nav__L-link" to='/'>
-                                   <p className="nav__L-link--text">Church</p>
-                                   <p className="nav__L-link--text">Arhitecture</p>
-                                   <p className="nav__L-link--text">Revitalization</p>
+                              <Link className="nav__mob-L--link" to='/'>
+                                   <p className="nav__mob-L--text">Church</p>
+                                   <p className="nav__mob-L--text">Arhitecture</p>
+                                   <p className="nav__mob-L--text">Revitalization</p>
                               </Link>
                          </div>
                          <div className="nav__mob-R">

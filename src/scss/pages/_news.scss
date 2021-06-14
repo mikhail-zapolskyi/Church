@@ -10,51 +10,7 @@
      @include resp(screenW1024) {
           grid-gap: 5rem;
      }
-
-     &__card{
-          min-width: 25rem;
-          height: auto;
-          display: flex;
-          flex-direction: column;
-          -webkit-box-shadow: 4px 0px 118px -24px rgba(0,0,0,0.61);
-          -moz-box-shadow: 4px 0px 118px -24px rgba(0,0,0,0.61);
-          box-shadow: 4px 0px 118px -24px rgba(0,0,0,0.61);
-          border-radius: 1rem;
-          transition: transform .4s linear;
-
-          &:hover {
-               transform: scale(1.1);
-          }
-          &--row {
-               width: 100%;
-               height: auto;
-          }
-
-          &--img {
-               width: 100%;
-               height: auto;
-               object-fit: cover;
-               border-top-left-radius: 1rem;
-               border-top-right-radius: 1rem;
-          }
-
-          &--title {
-               padding: 2rem;
-               font-size: $lg;
-          }
-
-          &--body {
-               padding: 2rem;
-               font-size: $md;
-          }
-
-          &--date {
-               display: block;
-               margin: 1rem 0;
-               text-align: center;
-          }
-     }
-
+     
 }
 
 .singleNews {

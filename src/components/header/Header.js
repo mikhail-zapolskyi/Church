@@ -11,11 +11,11 @@ const Header = () => {
 
      return (
           <header className={ 'header' }>
-               <div className='hero' id={`${ path === '/' ? 'index' : pageName[1] }`}>
+               <div className='hero' id={`${ path === '/' ? 'index': pageName[1] }`}>
                     <div className="hero__title">
                          <h1 className="hero__title-text">
                               St. Patrick’s Church <br />
-                              { path === '/' ? 'Revitalization' : pageName[1] }
+                              { path === '/' ? 'Revitalization'.toUpperCase() : pageName[1].toUpperCase() }
                          </h1>
                     </div>
                     <div className="hero__info">

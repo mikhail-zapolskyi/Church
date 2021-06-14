@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Intro from './Templates/Home/Intro';
-import Contributors from './Templates/Home/Contributors';
+import { Intro, Contributors, LastNews } from './components/index';
 
 const Home = () => {
      
@@ -9,6 +8,7 @@ const Home = () => {
           <main className="main">
                <Intro />
                <Contributors />
+               <LastNews />
           </main>
      )
 }
