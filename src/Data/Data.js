@@ -33,15 +33,46 @@ const Data = {
           { id: 16, src: logo11, alt: 'Hasegawa', link: ''}
      ],
      people: [
-          { id: 1, src: person1, alt: 'Person', link: '/', bio: `President of St. John Chrysostom Ministry of Calgary.`, phone: '403-903-4013', name: 'Father Stan',
-          email: 'orthodox.calgary@gmail.com', phLink: 'tel:+14039034013'},
-          { id: 2, src: person2, alt: 'Person', link: '/', bio: `The Church revitalisation project Coordinator`, phone: '780-560-0108', name: 'Pavel Penkov',
-          email: 'pavel.penkov@hotmail.com', phLink: 'tel:+17805600108'},
-          { id: 3, src: person3, alt: 'Person', link: '/', bio: `The Church revitalisation project Coordinator`, phone: '4037144231', name: 'Peter Imshenetsky',
-          email: 'peter@pidesigngroup.ca', phLink: 'tel:+14037144231'},
+          { id: 1, name: 'Father Stan', bio: `President of St. John Chrysostom Ministry of Calgary.`, alt: 'Father Stan', src: person1,
+          phone: '403-903-4013', email: 'orthodox.calgary@gmail.com', phLink: 'tel:+14039034013'},
+          { id: 2, name: 'Pavel Penkov', bio: `St.Patrick Church Revitalization Project Coordinator`, alt: 'Pavel Penkov', src: person2,
+          phone: '780-560-0108', email: 'pavel.penkov@hotmail.com', phLink: 'tel:+17805600108'},
+          { id: 3, name: 'Peter Imshenetsky', bio: `St.Patrick Church Revitalization Project Coordinator.`, alt: 'Peter Imshenetsky', src: person3,
+          phone: '403-714-4231', email: 'peter@pidesigngroup.ca', phLink: 'tel:+14037144231'}
      ],
      news: [
-          { id: 1, src: person1, alt: 'person', title: 'This is title place', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          { id: 1, src: person1, alt: 'person', title: 'This is news title place', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores`, date: new Date() },
+          {id: 2, src: person1, alt: 'person', title: 'This is title place', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores`, date: new Date()},
+          {id: 3, src: person1, alt: 'person', title: 'This is title place', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores`, date: new Date()},
+          {id: 4, src: person1, alt: 'person', title: 'This is title place', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores`, date: new Date()},
+          {id: 5, src: person1, alt: 'person', title: 'This is title place', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores`, date: new Date()},
+          {id: 6, src: person1, alt: 'person', title: 'This is title place', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores`, date: new Date()},
+          {id: 7, src: person1, alt: 'person', title: 'This is title place', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores`, date: new Date()},
+          {id: 8, src: person1, alt: 'person', title: 'This is title place', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores`, date: new Date()},
+          {id: 9, src: person1, alt: 'person', title: 'This is title place', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores`, date: new Date()},
+          {id: 10, src: person1, alt: 'person', title: 'This is title place', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores`, date: new Date()},
+          {id: 11, src: person1, alt: 'person', title: 'This is title place', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Delectus omnis ratione asperiores`, date: new Date()},
+     ],
+
+     stages: [
+          { id: 1, src: person1, alt: 'person', title: 'Stages title check', body: `hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Delectus omnis ratione asperiores hort Bio. Lorem ipsum dolor sit amet consectetur adipisicing elit. 

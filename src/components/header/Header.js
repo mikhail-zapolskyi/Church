@@ -40,7 +40,7 @@ const Header = () => {
                          </div>
                          <div className="hero__info-col">
                               <p className="hero__info-title">Support Project</p>
-                              <Link to='/' className="hero__info-text alert">Click here</Link>
+                              <Link to='/' className="alert hero__info-button">Click here</Link>
                          </div>
                     </div>
                </div>

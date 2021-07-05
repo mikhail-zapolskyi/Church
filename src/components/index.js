@@ -7,7 +7,6 @@ export { default as Home } from './pages/Home';
 export { default as News } from './pages/News';
 export { default as Stages } from './pages/Stages';
 export { default as Pdf } from './pages/Pdf';
-export { default as Assessment } from './pages/Assessment';
 export { default as Contacts } from './pages/Contacts';
 export { default as NotFound } from './pages/NotFound';
 export { default as Post } from './pages/Post';

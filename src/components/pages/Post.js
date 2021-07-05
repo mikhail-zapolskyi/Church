@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 
 import Data from '../../Data/Data';
 import Article from './components/Article';
-
+import LastNews from './components/LastNews';
 
 const Post = () => {
      const { id } = useParams();
@@ -18,6 +18,7 @@ const Post = () => {
                          body={ news.body }
                          date={ news.date }
                     />
+                    <LastNews />
                </section>
           </main>
      )

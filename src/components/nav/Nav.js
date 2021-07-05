@@ -105,7 +105,7 @@ const Nav = () => {
                               <Link className="nav__mob-link" to='/'>Home</Link>
                               <Link className="nav__mob-link" to='/stages'>Stages</Link>
                               <Link className="nav__mob-link" to='/news'>News</Link>
-                              <Link className="nav__mob-link" to='pdf'>Bylaw</Link>
+                              <Link className="nav__mob-link" to='/bylaw'>Bylaw</Link>
                               <Link className="nav__mob-link" to='assessment'>Historical <br /> Assessment</Link>
                               <Link className="nav__mob-link" to='/contacts'>Contacts</Link>
                          </div>

@@ -11,25 +11,36 @@ header {
 #news,
 #stages,
 #assessment,
+#bylaw,
 #contacts {
      min-height: 60vh !important;
 }
+
 #news{
      background: no-repeat url('../../images/img6.jpg');
      background-size: cover;
 }
+
 #stages {
      background: no-repeat url('../../images/img5.jpg');
      background-size: cover;
 }
+
+#bylaw {
+     background: no-repeat url('../../images/img3.jpg');
+     background-size: cover;
+}
+
 #assessment {
      background: no-repeat url('../../images/img4.jpg');
      background-size: cover;
 }
+
 #contacts {
      background: no-repeat url('../../images/img3.jpg');
      background-size: cover;
 }
+
 
 .hero {
      width: 100%;
@@ -48,12 +59,13 @@ header {
      &__title {
           width: 66.66%;
           align-self: center;
+
           @include resp(screenW1024){
                width: 100%;
           }
           @include resp(screenW768){
                position: absolute;
-               top: 50%;
+               top: 70%;
           }
 
           &-text {
@@ -125,14 +137,40 @@ header {
           }
 
           &-text{
-               font-size: $sm;
+               font-size: $md;
+               
                @include resp(screenW768){
                     color: $color-white;
+                    line-height: 1.5;
                }
           }
 
           &-link {
-               padding: 0 1rem;
+               padding: .5rem;
+
+               @include resp(screenW768){
+                    margin-right: 2rem;
+               }
+               
+          }
+
+          &-button {
+               width: 80%;
+               padding: 1rem;
+               text-align: center;
+               font-size: $md;
+               color: $color-white;
+               background-color: $color-link;
+               transition: all .3s linear;
+
+               &:hover {
+                    transform: scale(1.1);
+               }
+
+               @include resp(screenW768) {
+                    width: 13rem;
+               }
+
           }
 
           &-icon--f {

@@ -18,7 +18,7 @@ const Contacts = () => {
                                    email={ person.email }
                                    bio={ person.bio }
                                    phLink={ person.phLink }
-                                   emailLink={` mailto:${ person.email } `}
+                                   emailLink={`mailto:${ person.email }`}
                               />
                          ))}
                     </div>
