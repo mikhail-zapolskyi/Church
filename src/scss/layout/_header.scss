@@ -8,7 +8,7 @@ header {
      background-size: cover;
 }
 
-#news,
+#church_life,
 #stages,
 #assessment,
 #bylaw,
@@ -16,7 +16,7 @@ header {
      min-height: 60vh !important;
 }
 
-#news{
+#church_life{
      background: no-repeat url('../../images/img6.jpg');
      background-size: cover;
 }
@@ -70,6 +70,7 @@ header {
 
           &-text {
                text-align: center;
+               text-transform: capitalize;
                font-size: $xxxl;
                font-weight: 800;
                color: $color-white;

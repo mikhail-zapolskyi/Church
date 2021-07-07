@@ -8,10 +8,13 @@
 .contact__cont {
      width: 100%;
      display: grid;
-     grid-template-columns: 1fr;
+     grid-template-columns: 1fr 1fr;
      align-items: center;
      justify-content: center;
 
+     @include resp(screenW1800){
+          grid-template-columns: 1fr;
+     }
 }
 
 .contact__card {
@@ -35,11 +38,7 @@
 
      &--bioCont {
           display: grid;
-          grid-template-columns: 30% 70%;
-
-          @include resp(screenW1024){
-               grid-template-columns: 40% 60%;
-          }
+          grid-template-columns: 25rem 70%;
 
           @include resp(screenW768) {
                grid-template-columns: 1fr;
@@ -60,11 +59,16 @@
      }
 
      &--img {
-          width: 100%;
+          width: 25rem;
           height: 30rem;
           padding: 1rem;
           object-fit: cover;
           border-radius: 2rem;
+
+          @include resp(screenW480){
+               width: 100%;
+               height: 100%;
+          }
      }
 
      &--name {

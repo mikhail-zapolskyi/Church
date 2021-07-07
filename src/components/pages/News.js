@@ -11,7 +11,7 @@ const News = () => {
      const path = location.pathname;
      const pageName = path.split('/');
 
-     const data = pageName[1] === 'news' ? Data.news : Data.stages;
+     const data = pageName[1] === 'church_life' ? Data.news : Data.stages;
 
      return (
 

@@ -15,7 +15,7 @@ const Header = () => {
                     <div className="hero__title">
                          <h1 className="hero__title-text">
                               St. Patrick’s Church <br />
-                              { path === '/' ? 'Revitalization'.toUpperCase() : pageName[1].toUpperCase() }
+                              { path === '/' ? 'Revitalization' : pageName[1].replace(/_|-/g, " ") }
                          </h1>
                     </div>
                     <div className="hero__info">
@@ -40,7 +40,7 @@ const Header = () => {
                          </div>
                          <div className="hero__info-col">
                               <p className="hero__info-title">Support Project</p>
-                              <Link to='/' className="alert hero__info-button">Click here</Link>
+                              <Link to='/' className="alert hero__info-button">Contribute</Link>
                          </div>
                     </div>
                </div>

@@ -7,7 +7,10 @@ const Intro = () => {
                <div className="intro">
                     <div className="intro__card left__cont">
                          <div className="intro__card--title">
-                              <h2 className="intro__card--title-T">Some text need to go here</h2>
+                              <h2 className="intro__card--title-T">
+                                   St. Patrick's Church, located at 14608 Macleod Tr SE in 
+                                   Calgary, Alberta, is being revitalised
+                              </h2>
                               <Paragraph  styles="intro__card--title-underline" />
                               <hr className="hr__left" />
                               <Paragraph  styles="intro__card--title-B" text="Some text need to go here"/>
@@ -15,18 +18,19 @@ const Intro = () => {
                          <div className="intro__card--body">
                               <Paragraph 
                                    styles="intro__card--body-par"
-                                   text="The heritage value of St. Patrick's Roman Catholic Church 
-                                   lies in its association with the establishment of early 
-                                   religious institutions in southern Alberta and its representation 
-                                   of early Alberta church architecture."
+                                   text="The (non-profit) community organisation St. John Chrysostom Ministry of Calgary
+                                        proposes to get the requisite documentation from the City of Calgary, 
+                                        including DP, BP, and IFC, and planning to proceed with the construction 
+                                        of a new church foundation, new utilities, and upgrades to the Church site."
                               />
                               <Paragraph 
                                    styles="intro__card--body-par"
-                                   text="The arrival of the Canadian Pacific Railway (C.P.R.) at Fort Calgary in 1883
-                                   established the fledgling community as a hub for settlement and development in
-                                   southern Alberta. The trail south from Calgary to Fort Macleod became a significant
-                                   transportation route and several stopping houses and small communities emerged
-                                   along the path, including Fish Creek."
+                                   text="The Church building was taken in as is, entirely dismantled. 
+                                        The structure has been heavily vandalised both inside and out. 
+                                        Broken windows, ripped partitions, shredded walls, no heat, and 
+                                        disintegrating siding with insulation. The original church bell 
+                                        was stolen and found at a garage sale later. Gas and other site 
+                                        services are not available."
                               />
                               <Paragraph 
                                    styles="intro__card--body-par"
