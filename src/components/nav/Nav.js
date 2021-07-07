@@ -104,7 +104,7 @@ const Nav = () => {
                          <div className="nav__mob-R">
                               <Link className="nav__mob-link" to='/'>Home</Link>
                               <Link className="nav__mob-link" to='/stages'>Stages</Link>
-                              <Link className="nav__mob-link" to='/church_life'>News</Link>
+                              <Link className="nav__mob-link" to='/church_life'>Church Life</Link>
                               <Link className="nav__mob-link" to='/bylaw'>Bylaw</Link>
                               <Link className="nav__mob-link" to='assessment'>Historical<br />Assessment</Link>
                               <Link className="nav__mob-link" to='/contacts'>Contacts</Link>
