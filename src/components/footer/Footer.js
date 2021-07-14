@@ -50,6 +50,7 @@ const Footer = () => {
                                         <li className="footer__list--item"><Link className="footer__list--link" to='news'>News</Link></li>
                                         <li className="footer__list--item"><Link className="footer__list--link" to='/bylaw'>Bylaw</Link></li>
                                         <li className="footer__list--item"><Link className="footer__list--link" to='/assessment'>Historical Assessment</Link></li>
+                                        <li className="footer__list--item"><Link className="footer__list--link" to='/grant_program'>Grant Program</Link></li>
                                         <li className="footer__list--item"><Link className="footer__list--link" to='/contacts'>Contact</Link></li>
                                    </ul>
                               </div>
