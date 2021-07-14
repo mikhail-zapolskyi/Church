@@ -23,9 +23,7 @@
      margin: 2rem auto;
      background-color: $color-gray5;
      border-radius: 1rem;
-     -webkit-box-shadow: 4px 0px 118px -24px rgba(0,0,0,0.42);
-     -moz-box-shadow: 4px 0px 118px -24px rgba(0,0,0,0.42);
-     box-shadow: 4px 0px 118px -24px rgba(0,0,0,0.42);
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
      transition: transform .4s linear;
 
      &:hover {

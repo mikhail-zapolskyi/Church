@@ -1,11 +1,11 @@
-.news {
+.stages {
      height: auto;
      margin: 10rem 0;
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
      justify-content: center;
      justify-items: center;
-     grid-gap: 10rem;
+     grid-gap: 5rem;
 
      @include resp(screenW1024) {
           grid-gap: 5rem;

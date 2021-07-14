@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Intro, Contributors, LastNews } from './components/index';
+import { Intro, Contributors, LastStages } from './components/index';
 
 const Home = () => {
      
@@ -8,7 +8,7 @@ const Home = () => {
           <main className="main">
                <Intro />
                <Contributors />
-               <LastNews />
+               <LastStages />
           </main>
      )
 }

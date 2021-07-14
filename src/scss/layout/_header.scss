@@ -8,39 +8,40 @@ header {
      background-size: cover;
 }
 
-#church_life,
-#stages,
-#assessment,
-#bylaw,
-#contacts {
-     min-height: 60vh !important;
-}
-
 #church_life{
      background: no-repeat url('../../images/img6.jpg');
-     background-size: cover;
 }
 
 #stages {
      background: no-repeat url('../../images/img5.jpg');
-     background-size: cover;
 }
 
 #bylaw {
      background: no-repeat url('../../images/img3.jpg');
-     background-size: cover;
 }
 
 #assessment {
      background: no-repeat url('../../images/img4.jpg');
-     background-size: cover;
+}
+
+#grant_program {
+     background: no-repeat url('../../images/img4.jpg');
 }
 
 #contacts {
      background: no-repeat url('../../images/img3.jpg');
-     background-size: cover;
 }
 
+#church_life,
+#stages,
+#assessment,
+#bylaw,
+#contacts,
+#grant_program {
+     min-height: 60vh !important;
+     background-position: center center;
+     background-size: cover;
+}
 
 .hero {
      width: 100%;

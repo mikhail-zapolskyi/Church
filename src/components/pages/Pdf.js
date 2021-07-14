@@ -15,7 +15,7 @@ const Pdf = () => {
      const pageName = path.split('/');
      const [numPages, setNumPages] = useState(null);
      const [pageNumber, setPageNumber] = useState(1);
-     
+
      function onDocumentLoadSuccess({ numPages }) {
           setNumPages(numPages);
           setPageNumber(1);
@@ -36,7 +36,21 @@ const Pdf = () => {
      return (
           <main className="main">
                <section className='pdf'>      
-                    <Document file={ pageName[1] === 'bylaw' ? bylaw : assessment } onLoadSuccess={onDocumentLoadSuccess} className="pdf__cont">
+                    <Document file={ 
+                         (() => {
+                              switch(pageName[1]) {
+                                   case 'bylaw': 
+                                        return bylaw;
+                                   case 'assessment': 
+                                        return assessment;
+                                   case 'grant_program': 
+                                        return assessment;
+                                   default:
+                                        return bylaw;
+                              }
+                         })()
+
+                     } onLoadSuccess={onDocumentLoadSuccess} className="pdf__cont">
                          <Page pageNumber={pageNumber} className='pdf__page'/>
                     </Document>
                     <div className='pdf__info'>

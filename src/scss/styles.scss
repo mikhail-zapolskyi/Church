@@ -11,7 +11,7 @@
 
 // COMPONENTS
 @import 'components/layout';
-@import 'components/newsCard';
+@import 'components/stageCard';
 @import 'components/article';
 
 // LAYOUT
@@ -21,6 +21,9 @@
 
 // PAGES
 @import 'pages/home';
-@import 'pages/news';
+@import 'pages/churchLife';
+@import 'pages/stages';
 @import 'pages/pdf';
 @import 'pages/contact';
+
+@import "~react-image-gallery/styles/scss/image-gallery.scss";

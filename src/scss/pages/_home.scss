@@ -58,11 +58,16 @@
           }
 
           &--container { /*---------------  Intro / Images Container --------------------*/
-               position: relative;
                width: 100%;
-               height: 90%;
+               height: 100%;
+               display: grid;
+               grid-template-columns: 1fr;
+               grid-gap: 1rem;
+               justify-content: center;
+               align-items: center;
+
                @include resp(screenW1024){
-                    height: 60vw;
+                    height: 50rem;
                     margin: 0;
                }
 
@@ -70,41 +75,26 @@
                     height: 80vw;
                     margin: 0;
                }
-               
-               &-img1 {
-                    position: absolute;
-                    width: calc(( 100% / 3 ) * 2);
-                    height: 100%;
-                    background-image: url('../../images/img2.jpg');
-                    background-position: center center;
-                    background-size: cover;
-                    z-index: 1;
-     
-                    @include resp(screenW1024){
-                         width: calc(( 100% / 4 ) * 3);
-                    }
 
-                    @include resp(screenW760){
-                         width: calc(( 100% / 4 ) * 2.5);
+               &-img1 {
+                    background-image: url('../../images/img2.jpg');
+               }
+
+               &-img2 {
+                    background-image: url('../../images/img0.jpg');
+                    @include resp(screenW1024){
+                         display: none !important;
                     }
                }
-     
+
+               &-img1,
                &-img2 {
-                    position: absolute;
-                    bottom: -10%;
-                    right: 0;
-                    width: calc(( 100% / 3 ) * 2);
-                    height: 50%;
-                    background-image: url('../../images/img0.jpg');
+                    display: block;
+                    background-color: black;
+                    width: 100%;
+                    height: 100%;
                     background-position: center center;
                     background-size: cover;
-                    z-index: 1;
-                    @include resp(screenW1024){
-                         width: calc(( 100% / 4 ) * 3);
-                    }
-                    @include resp(screenW760){
-                         min-width: calc(( 100% / 3 ) * 2.5);
-                    }
                }
           }
      }

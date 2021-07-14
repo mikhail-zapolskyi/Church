@@ -1,18 +1,17 @@
-.news {
+.stage {
      &__card{
           min-width: 25rem;
           height: auto;
           display: flex;
           flex-direction: column;
-          -webkit-box-shadow: 4px 0px 118px -24px rgba(0,0,0,0.61);
-          -moz-box-shadow: 4px 0px 118px -24px rgba(0,0,0,0.61);
-          box-shadow: 4px 0px 118px -24px rgba(0,0,0,0.61);
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
           border-radius: 1rem;
           transition: transform .4s linear;
 
           &:hover {
                transform: scale(1.05);
           }
+
           &--row {
                width: 100%;
                height: auto;
@@ -20,7 +19,9 @@
 
           &--img {
                width: 100%;
-               height: auto;
+               max-height: 80%;
+               margin-bottom: 1rem;
+               align-self: center;
                object-fit: cover;
                border-top-left-radius: 1rem;
                border-top-right-radius: 1rem;
@@ -37,7 +38,6 @@
           }
 
           &--date {
-               display: block;
                margin: 1rem 0;
                text-align: center;
           }
