@@ -157,18 +157,7 @@ header {
           }
 
           &-button {
-               width: 80%;
-               padding: 1rem;
-               text-align: center;
-               font-size: $md;
-               color: $color-white;
-               background-color: $color-link;
-               transition: all .3s linear;
-
-               &:hover {
-                    transform: scale(1.1);
-               }
-
+               @include button(80%, 1rem, $md, $color-white, $color-link);
                @include resp(screenW768) {
                     width: 13rem;
                }

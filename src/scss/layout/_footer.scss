@@ -84,8 +84,13 @@
                color: $color-gray5;
           }
 
-          
-          
+          &--btn {
+               align-self: center;
+               @include button(60%, 1rem, $md, $color-white, $color-link);
+               @include resp(screenW768) {
+                    width: 13rem;
+               }
+          }
      }
 
      &__text {

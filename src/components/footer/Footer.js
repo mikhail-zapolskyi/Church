@@ -57,27 +57,21 @@ const Footer = () => {
                          </div>
                          <div className="footer__grid--col">
                               <div className="footer__grid--row">
-                                   <p className="footer__title">Some text or links </p>
+                                   <p className="footer__title">Address</p>
                                    <ul className="footer__list">
-                                        <li className="footer__list--item">Calgary</li>
-                                        <li className="footer__list--item">Airdrie</li>
-                                        <li className="footer__list--item">Okotoks</li>
-                                        <li className="footer__list--item">Cochrane</li>
-                                        <li className="footer__list--item">Chestermere</li>
-                                        <li className="footer__list--item">Canmore</li>
-                                        <li className="footer__list--item">Banff</li>
+                                        <li className="footer__list--item">14608 Macleod Tr SE Calgary Alberta</li>
                                    </ul>
                               </div>
                               <div className="footer__grid--row">
-                                   <p className="footer__title">Some text or links</p>
+                                   <p className="footer__title">Contribute</p>
                                    <ul className="footer__list">
-                                        <li className="footer__list--item">Some text or links here</li>
+                                        <li className="footer__list--item footer__list--btn">Click here</li>
                                    </ul>
                               </div>
                          </div>
                     </div>
-     </div>
-</footer>
+               </div>
+          </footer>
      )
 }
 
