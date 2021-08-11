@@ -9,6 +9,7 @@ import logo8 from '../images/contributors/logo-8.png';
 import logo9 from '../images/contributors/logo-9.png';
 import logo10 from '../images/contributors/logo-10.png';
 import logo11 from '../images/contributors/logo-11.png';
+import logo11 from '../images/contributors/logo-11.png';
 import person1 from '../images/people/person-1.jpg';
 import person2 from '../images/people/person-2.jpg';
 import person3 from '../images/people/person-3.jpg';
@@ -32,7 +33,7 @@ const Data = {
           { id: 9, src: logo9, alt: 'Creston Developments', link: ''},
           { id: 10, src: logo10, alt: 'Burnco', link: ''},
           { id: 11, src: logo11, alt: 'St. John Chrysostom', link: ''},
-          { id: 12, src: logo11, alt: '', link: ''},
+          { id: 12, src: logo12, alt: 'Fireweed', link: ''},
           { id: 13, src: logo11, alt: 'Fireweed', link: ''},
           { id: 14, src: logo11, alt: 'Sunset', link: ''},
           { id: 15, src: logo11, alt: 'GeoSan', link: ''},
