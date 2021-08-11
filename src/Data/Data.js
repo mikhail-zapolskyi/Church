@@ -61,7 +61,7 @@ const Data = {
           { 
                id: 1, 
                src: stage1, 
-               alt: 'person', 
+               alt: 'Revitalization Grand Program', 
                title: 'Revitalization Grand Program', 
                body: `The work of revitalising St. Patrick Church began in the year 2020. Historic Conservation and Revitalisation Grant 
                programme was founded by a group of persons from the “St. John Chrysostom Russian Orthodox Church of Calgary”.`,
@@ -77,7 +77,7 @@ const Data = {
           {
                id: 2, 
                src: stage2, 
-               alt: 'person', 
+               alt: 'New Church Bylaw', 
                title: 'New Church Bylaw', 
                body: `We are made request to the City for engaging the Church under City umbrella and recognising as the historical object. 
                The city has been made the Bylaw for the land and the Church Building. This action opened the door to the city of founding 
@@ -88,7 +88,7 @@ const Data = {
                id: 3, 
                src: stage3, 
                alt: 'person', 
-               title: '', 
+               title: 'Church Designation', 
                body: `The church comity has been initiated the process of the Church Designation as a Municipal Historic Resource. After the 
                City of Calgary's designation of the Municipal Historic Resource the church, comity has got access to the grand founding program 
                for the City of Calgary related to preservation and revitalization of Historical Sources.`, 
@@ -97,8 +97,8 @@ const Data = {
           {
                id: 4, 
                src: stage4, 
-               alt: 'person', 
-               title: 'New Church Bylaw', 
+               alt: 'Conservation Plan', 
+               title: 'Conservation Plan', 
                body : `The church comity is engaged to the Revitalisation Program the Historical Consulting Company. The intention of this project 
                is to work closely with the Church’s representatives to determine the current condition and outline a conservation program to conserve 
                regulated/protected elements of the building that aligns with proposed renovations to the building (Heritage Assessment and Conservation Plan), 

@@ -11,15 +11,10 @@ const IMAGES = Images.map((image, key) => (
      }
 ));
 
-
-
-console.log(IMAGES);
 const ChurchLife = () => {
      
 
      return (
-
-
           <main className='main'>
                <section className='churchLife'>
                     <ImageGallery items={IMAGES} />
