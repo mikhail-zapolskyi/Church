@@ -77,11 +77,11 @@
                }
 
                &-img1 {
-                    background-image: url('../../images/img2.jpg');
+                    background-image: url('../../images/img03.jpg');
                }
 
                &-img2 {
-                    background-image: url('../../images/img0.jpg');
+                    background-image: url('../../images/img01.jpg');
                     @include resp(screenW1024){
                          display: none !important;
                     }
