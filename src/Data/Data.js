@@ -9,7 +9,7 @@ import logo8 from '../images/contributors/logo-8.png';
 import logo9 from '../images/contributors/logo-9.png';
 import logo10 from '../images/contributors/logo-10.png';
 import logo11 from '../images/contributors/logo-11.png';
-import logo11 from '../images/contributors/logo-11.png';
+import logo12 from '../images/contributors/logo-12.png';
 import person1 from '../images/people/person-1.jpg';
 import person2 from '../images/people/person-2.jpg';
 import person3 from '../images/people/person-3.jpg';

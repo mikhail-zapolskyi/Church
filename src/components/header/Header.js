@@ -23,10 +23,10 @@ const Header = () => {
                          <div className="hero__info-col">
                                <p className="hero__info-title">Share</p>
                               <div className="hero__info-row">
-                                   <Link to='/' className="hero__info-link">
+                                   <Link to={{ pathname: 'https://www.facebook.com/groups/5496103560421117' }} target='_blank' className="hero__info-link">
                                         <FaFacebook className="hero__info-icon--f" />
                                    </Link>
-                                   <Link to='/' className="hero__info-link">
+                                   <Link to={{ pathname: 'https://www.linkedin.com/groups/14045263/' }} target='_blank' className="hero__info-link">
                                         <FaLinkedin className="hero__info-icon--l" />
                                    </Link>
                                    <Link to='/' className="hero__info-link">
@@ -40,7 +40,7 @@ const Header = () => {
                          </div>
                          <div className="hero__info-col">
                               <p className="hero__info-title">Support Project</p>
-                              <Link to='/' className="alert hero__info-button">Contribute</Link>
+                              <Link to={{ pathname: 'https://www.gofundme.com/f/st-patricks-church-revitalization?utm_medium=email&utm_source=product&utm_campaign=p_email%2B2300-co-team-welcome' }} target='_blank' className="alert hero__info-button">Contribute</Link>
                          </div>
                     </div>
                </div>
