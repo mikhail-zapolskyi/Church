@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import bylaw from '../../docs/bylaw.pdf';
 import assessment from '../../docs/assessment.pdf';
@@ -53,6 +54,15 @@ const Pdf = () => {
                      } onLoadSuccess={onDocumentLoadSuccess} className="pdf__cont">
                          <Page pageNumber={pageNumber} className='pdf__page'/>
                     </Document>
+                    <Helmet>
+                         {/* Primary Meta Tags */}
+                         <meta name="title" content={`St Patrick Church ${ pageName[1] }`}/>
+                         <meta name="description" content="Contact St Patrick Church Documents" />
+                         <meta name="keywords" content="Church, St Patrick Church, contact, donation, documents" />
+                         <meta name="robots" content="index, follow" />
+                         <meta name="language" content="English" />
+                         <title>St Patrick Church { pageName[1] }</title>
+                    </Helmet>
                     <div className='pdf__info'>
                          <p className='pdf__pageNumber'>Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}</p>
                          <button type="button" disabled={pageNumber <= 1} onClick={previousPage} className='pdf__button'>Previous</button>

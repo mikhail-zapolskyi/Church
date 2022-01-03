@@ -7,17 +7,20 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "moment": "^2.29.1",
-    "node-sass": "^6.0.0",
+    "node-sass": "^7.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-ga": "^3.3.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
-    "react-image-gallery": "^1.2.6",
+    "react-image-gallery": "^1.2.7",
     "react-mailto": "^0.4.0",
     "react-moment": "^1.1.1",
     "react-pdf": "^5.3.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "react-scripts": "^5.0.0",
+    "web-vitals": "^1.1.2",
+    "webpack": "^5.65.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,8 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "webpack": "^4.44.2"
   }
 }
