@@ -58,21 +58,30 @@ header {
      }
 
      &__title {
-          width: 66.66%;
-          align-self: center;
+          // width: 66.66%;
+          // align-self: left;
+          position: absolute;
+          top: 80%;
+          left: 60%;
+
 
           @include resp(screenW1024){
+               position: relative;
+               width: 66.66%;
+               align-self: left;
                width: 100%;
           }
+
           @include resp(screenW768){
                position: absolute;
-               top: 70%;
+               top: 50%;
+               left: 0;
           }
 
           &-text {
                text-align: center;
                text-transform: capitalize;
-               font-size: $xxxl;
+               font-size: $xxl;
                font-weight: 800;
                color: $color-white;
                @include resp(screenW768){

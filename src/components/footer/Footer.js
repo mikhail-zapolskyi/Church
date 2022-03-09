@@ -65,7 +65,7 @@ const Footer = () => {
                               <div className="footer__grid--row">
                                    <p className="footer__title">Contribute</p>
                                    <ul className="footer__list">
-                                        <li className="footer__list--item footer__list--btn">Click here</li>
+                                        <Link to={{ pathname: 'https://www.gofundme.com/f/st-patricks-church-revitalization?utm_medium=email&utm_source=product&utm_campaign=p_email%2B2300-co-team-welcome' }} target='_blank' rel="noopener noreferrer" className="footer__list--item footer__list--btn">Click here</Link>
                                    </ul>
                               </div>
                          </div>
